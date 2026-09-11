@@ -1,6 +1,6 @@
-# Stow Frontend
+# Keepr Frontend
 
-The web client for [Stow](../README.md), a decentralized savings protocol on Stellar. Built with Next.js (App Router), React 19, TypeScript, and Tailwind CSS v4.
+The web client for [Keepr](../README.md), a decentralized savings protocol on Stellar. Built with Next.js (App Router), React 19, TypeScript, and Tailwind CSS v4.
 
 This guide covers everything a new contributor needs to install, run, test, and build the app locally.
 
