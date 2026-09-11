@@ -8,7 +8,7 @@ import "./globals.css";
 const THEME_INIT_SCRIPT = `
 (function () {
   try {
-    var stored = localStorage.getItem("stow-theme");
+    var stored = localStorage.getItem("keepr-theme");
     var theme = stored === "light" || stored === "dark"
       ? stored
       : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
@@ -28,11 +28,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stow — Decentralized Savings on Stellar",
+  title: "Keepr — Decentralized Savings on Stellar",
   description:
-    "Stow is a non-custodial savings protocol on Stellar. Save transparently in USDC with flexible, locked, goal-based, and group savings enforced fully on-chain by Soroban smart contracts.",
+    "Keepr is a non-custodial savings protocol on Stellar. Save transparently in USDC with flexible, locked, goal-based, and group savings enforced fully on-chain by Soroban smart contracts.",
   keywords: [
-    "Stow",
+    "Keepr",
     "Stellar",
     "Soroban",
     "DeFi savings",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "group savings",
   ],
   openGraph: {
-    title: "Stow — Decentralized Savings on Stellar",
+    title: "Keepr — Decentralized Savings on Stellar",
     description:
       "Non-custodial, transparent savings in USDC — flexible, locked, goal-based, and group savings enforced on-chain.",
     type: "website",

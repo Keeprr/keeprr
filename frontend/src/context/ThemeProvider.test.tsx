@@ -32,7 +32,7 @@ describe("ThemeProvider", () => {
   });
 
   it("reads a stored preference on mount", async () => {
-    window.localStorage.setItem("stow-theme", "light");
+    window.localStorage.setItem("keepr-theme", "light");
 
     render(
       <ThemeProvider>
@@ -63,14 +63,14 @@ describe("ThemeProvider", () => {
     await waitFor(() => {
       expect(screen.getByTestId("theme")).toHaveTextContent("light");
     });
-    expect(window.localStorage.getItem("stow-theme")).toBe("light");
+    expect(window.localStorage.getItem("keepr-theme")).toBe("light");
 
     await user.click(screen.getByRole("button", { name: "toggle" }));
 
     await waitFor(() => {
       expect(screen.getByTestId("theme")).toHaveTextContent("dark");
     });
-    expect(window.localStorage.getItem("stow-theme")).toBe("dark");
+    expect(window.localStorage.getItem("keepr-theme")).toBe("dark");
   });
 
   it("throws when useTheme is used outside a ThemeProvider", () => {

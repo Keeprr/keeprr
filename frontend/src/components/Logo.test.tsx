@@ -3,31 +3,31 @@ import { render, screen } from "@testing-library/react";
 import Logo from "./Logo";
 
 describe("Logo", () => {
-  it("renders the Stow wordmark by default (variant='full')", () => {
+  it("renders the Keepr wordmark by default (variant='full')", () => {
     render(<Logo />);
-    expect(screen.getByText("Stow")).toBeInTheDocument();
+    expect(screen.getByText("Keepr")).toBeInTheDocument();
   });
 
   it("renders an accessible label on the mark's svg", () => {
     render(<Logo />);
-    expect(screen.getByRole("img", { name: "Stow logo" })).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: "Keepr logo" })).toBeInTheDocument();
   });
 
   it("omits the wordmark when variant='mark'", () => {
     render(<Logo variant="mark" />);
-    expect(screen.queryByText("Stow")).not.toBeInTheDocument();
-    expect(screen.getByRole("img", { name: "Stow logo" })).toBeInTheDocument();
+    expect(screen.queryByText("Keepr")).not.toBeInTheDocument();
+    expect(screen.getByRole("img", { name: "Keepr logo" })).toBeInTheDocument();
   });
 
   it("applies a custom className to the icon svg", () => {
     render(<Logo className="h-10 w-10" />);
-    const svg = screen.getByRole("img", { name: "Stow logo" });
+    const svg = screen.getByRole("img", { name: "Keepr logo" });
     expect(svg).toHaveClass("h-10", "w-10");
   });
 
   it("applies a custom wordmarkClassName to the wordmark", () => {
     render(<Logo wordmarkClassName="text-2xl font-bold" />);
-    expect(screen.getByText("Stow")).toHaveClass("text-2xl", "font-bold");
+    expect(screen.getByText("Keepr")).toHaveClass("text-2xl", "font-bold");
   });
 
   it("is theme-adaptive: the wordmark uses currentColor so it inherits its container's text color", () => {
@@ -36,7 +36,7 @@ describe("Logo", () => {
         <Logo />
       </div>,
     );
-    const wordmark = screen.getByText("Stow");
+    const wordmark = screen.getByText("Keepr");
     // `currentColor` resolves to the inherited (container) text color, so the
     // wordmark must pick up the red set on the wrapping div rather than a fixed
     // color of its own.

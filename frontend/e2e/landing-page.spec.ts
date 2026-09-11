@@ -6,12 +6,12 @@ test.describe("Landing Page Smoke Tests", () => {
   });
 
   test("should load the landing page", async ({ page }) => {
-    await expect(page).toHaveTitle(/Stow/i);
+    await expect(page).toHaveTitle(/Keepr/i);
   });
 
   test("should display the main navigation", async ({ page }) => {
     // Check logo
-    await expect(page.getByText("Stow")).toBeVisible();
+    await expect(page.getByText("Keepr")).toBeVisible();
 
     // Check navigation links
     await expect(page.getByRole("link", { name: "Features" })).toBeVisible();

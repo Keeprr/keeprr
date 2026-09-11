@@ -29,7 +29,7 @@ describe("Navbar", () => {
   it("renders the logo and navigation links", () => {
     renderNavbar();
 
-    expect(screen.getByText("Stow")).toBeInTheDocument();
+    expect(screen.getByText("Keepr")).toBeInTheDocument();
     expect(screen.getByText("Features")).toBeInTheDocument();
     expect(screen.getByText("Products")).toBeInTheDocument();
     expect(screen.getByText("Onboarding")).toBeInTheDocument();

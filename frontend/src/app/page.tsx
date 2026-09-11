@@ -253,7 +253,7 @@ export default function Home() {
               className="animate-rise mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted"
               style={{ animationDelay: "0.12s" }}
             >
-              Stow lets individuals and communities save transparently in USDC —
+              Keepr lets individuals and communities save transparently in USDC —
               with flexible, locked, goal-based and group savings enforced fully
               on-chain. Non-custodial. Dollar-denominated. Yours.
             </p>
@@ -448,7 +448,7 @@ export default function Home() {
                 Business Model
               </span>
               <h2 className="mt-5 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-                Transparent, on-chain fees. Stow earns only when you do.
+                Transparent, on-chain fees. Keepr earns only when you do.
               </h2>
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 <div className="rounded-2xl border border-border bg-card p-6">
@@ -467,7 +467,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-6 text-sm text-muted">
-                No token is required to use Stow. Any future governance would be
+                No token is required to use Keepr. Any future governance would be
                 introduced only after real usage exists.
               </p>
             </div>
@@ -479,7 +479,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Roadmap"
-              title="Where Stow is headed"
+              title="Where Keepr is headed"
               desc="Shipping the custody core first, gating mainnet on a security audit, then layering yield and ramps."
             />
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -597,7 +597,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted sm:flex-row">
-            <p>© {new Date().getFullYear()} Stow · MIT Licensed</p>
+            <p>© {new Date().getFullYear()} Keepr · MIT Licensed</p>
             <p className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-brand" />
               Powered by Stellar &amp; Soroban

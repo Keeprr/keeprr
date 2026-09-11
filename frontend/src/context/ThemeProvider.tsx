@@ -12,7 +12,7 @@ import {
 export type Theme = "light" | "dark";
 export type ThemePreference = Theme | "system";
 
-const STORAGE_KEY = "stow-theme";
+const STORAGE_KEY = "keepr-theme";
 
 interface ThemeContextValue {
   /** The theme actually applied to the document. */

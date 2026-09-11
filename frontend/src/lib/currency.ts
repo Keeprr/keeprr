@@ -1,7 +1,7 @@
 /**
  * Locale-aware currency and number display.
  *
- * Stow moves two kinds of amounts around:
+ * Keepr moves two kinds of amounts around:
  *  - "stroops" — the on-chain integer base unit (1 XLM = 10,000,000 stroops),
  *    always carried as a string to avoid JS number precision loss on large
  *    i128 values (see the `savings` entities' comments on this repo).
